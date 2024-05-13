@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <title>imtihon</title>
+</head>
+<style>
+  .form-label {
+    margin-bottom: 0.5rem;
+  }
+</style>
+
+<body>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <div class="btn_wrapper d-flex flex-column">
+            <button class="btn btn-light"><a href="./index.html">Ticket</a></button>
+            <button class="btn btn-light">
+              <a href="./products.html" class="products_tab">Products</a>
+            </button>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="tickets">
+            <form id="ticketForm" method="post">
+              <label  for="firstname">First Name:</label><br />
+              <input type="text" class="form-control" id="firstname" name="firstname" required />
+              <label for="lastname">Last Name:</label><br />
+              <input type="text" class="form-control" id="lastname" name="lastname" required />
+              <label for="phone">Phone Number:</label><br />
+              <input type="text" class="form-control" id="phone" name="phone" required />
+              <label for="ticketType">Select Type of Ticket:</label><br />
+              <select id="ticketType" class="form-control" name="ticketType" required>
+                <option value="">Select...</option>
+                <option value="plane">Plane</option>
+                <option value="train">Train</option>
+                <option value="bus">Bus</option>
+              </select><br /><br />
+              <label for="fromCity">From City:</label><br />
+              <select id="fromCity" class="form-control" name="fromCity" required>
+                <option value="" selected>Choose city </option>
+                <option value="toshkent">Toshkent</option>
+                <option value="buxoro">Buxoro</option>
+                <option value="sirdaryo">Sirdaryo</option>
+                <option value="jizzax">Jizzax</option>
+                <option value="qashqadaryo">Qashqadaryo</option>
+                <option value="samarqand">Samarqand</option>
+                <option value="navoiy">Navoiy</option>
+                <option value="qoraqalpogiston">Qoraqalpogiston</option>
+                <option value="andijon">Andijon</option>
+                <option value="namangan">Namangan</option>
+                <option value="surxondaryo">Surxondaryo</option>
+                <option value="sirdaryo">Sirdaryo</option>
+                <option value="fergana">Fergana</option>
+                <option value="xorazm">Xorazm</option>
+                <option value="nukus">Nukus</option>
+              </select><br /><br />
+              <label for="toCity">To City:</label><br />
+              <select id="toCity" class="form-control mb-0" name="toCity" required>
+                <option value="" selected>Choose city </option>
+                <option value="toshkent">Toshkent</option>
+                <option value="buxoro">Buxoro</option>
+                <option value="sirdaryo">Sirdaryo</option>
+                <option value="jizzax">Jizzax</option>
+                <option value="qashqadaryo">Qashqadaryo</option>
+                <option value="samarqand">Samarqand</option>
+                <option value="navoiy">Navoiy</option>
+                <option value="qoraqalpogiston">Qoraqalpogiston</option>
+                <option value="andijon">Andijon</option>
+                <option value="namangan">Namangan</option>
+                <option value="surxondaryo">Surxondaryo</option>
+                <option value="sirdaryo">Sirdaryo</option>
+                <option value="fergana">Fergana</option>
+                <option value="xorazm">Xorazm</option>
+                <option value="nukus">Nukus</option>
+              </select><br /><br />
+              <label for="date">Select Date:</label><br />
+              <input type="date"  data-provide="datepicker" id="date" class="form-control" name="date" required /><br /><br />
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div id="ticketTable" class="tickettable"></div>
+
+    </div>
+  </section>
+  <script src="./main.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+</body>
+
+</html>

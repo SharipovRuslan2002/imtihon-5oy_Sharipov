@@ -1,0 +1,83 @@
+.container {
+    max-width: 1500px !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+a{
+    text-decoration: none !important;
+    color: black !important;
+
+}
+.words {
+    display: flex;
+}
+
+.active {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.products {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+}
+
+.product {
+    max-width: 250px;
+    border: 1px solid black;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.image_container {
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.product:hover {
+    transition: all 0.4s ease-in-out;
+    scale: 1.1;
+}
+
+.btn {
+    margin-bottom: 40px;
+
+}
+
+.tickettable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+}
+
+select {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width:1000px) {
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
